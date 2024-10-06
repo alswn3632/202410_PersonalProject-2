@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "myfont";
+    font-weight: normal;
+    src: url("../font/NanumSquareRoundR.ttf") format("truetype");
+}
+
+.boardMain {
+    font-family: "myfont";
+    margin: 0 auto; 
+    max-width: 1280px; 
+}
+
+.boardMain>.header{
+    width: 1280px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.boardMain>.header>.txt1{
+    width: 900px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: start;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.boardMain>.header>.txt2{
+    width: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: end;
+}
+
+.boardMain>.header .btn1 {
+    cursor: pointer;
+    width: 150px;
+    font-size: 20px;
+    background-color: #0a0a31;
+    border: none;
+    outline: none;
+    padding: 5px; 
+    color: white;
+    transition: background-color 0.3s; 
+}
+
+.boardMain>.header .btn1:hover {
+    background-color: #1a1a51;
+}
+
+.boardMain>.main{
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boardMain>.main>.searchBox{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.boardMain>.main>.searchBox>select {
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.boardMain>.main>.searchBox>input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    box-sizing: border-box;
+}
+
+.boardMain>.main>.searchBox>.searchBtn {
+    cursor: pointer;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    background-color: #0a0a31;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.boardMain>.main>.searchBox>.searchBtn:hover {
+    background-color: #1a1a51;
+}
+
+.boardMain>.main>.sortBox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.boardMain>.main>.sortBox>.sort>button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgb(84, 84, 84);
+
+}
+
+.boardMain>.main>.sortBox>.sort>.selected {
+    font-weight: bold;
+    color: black;
+}
+
+.boardMain>.main>.tableBox{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boardMain>.main>.tableBox>table {
+    width: 1280px;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.boardMain>.main>.tableBox>table th, td {
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    text-align: left; 
+}
+
+.boardMain>.main>.tableBox>table .row1{
+    width: 50px;
+}
+.boardMain>.main>.tableBox>table .row3{
+    width: 100px;
+}
+.boardMain>.main>.tableBox>table .row4{
+    width: 100px;
+}
+.boardMain>.main>.tableBox>table .row5{
+    width: 50px;
+}
+
+.boardMain>.main>.tableBox>table th {
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+
+.boardMain>.main>.tableBox>table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.boardMain > .main > .tableBox > .writeBtn {
+    cursor: pointer;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    align-self: flex-end;    
+    line-height: 22px;
+    background-color: #0a0a31;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.boardMain>.main>.tableBox>.writeBtn:hover {
+    background-color: #1a1a51;
+}
+
+.boardMain>.main>.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.boardMain>.main>.pagination button {
+    cursor: pointer;
+    height: 45px;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.3s; 
+}
+
+.boardMain>.main>.pagination button:disabled {
+    cursor: auto;
+    color: gray;
+}

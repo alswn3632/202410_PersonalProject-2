@@ -1,0 +1,71 @@
+/* 댓글과 대댓글을 감싸는 comment 전체 스타일 */
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* 첫 번째 댓글 (co1) 스타일 */
+.co1, .co2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* 대댓글 (co2) 들여쓰기 */
+.co2 {
+    margin-left: 20px; /* 대댓글은 댓글보다 들여쓰기 */
+    background-color: #f0f0f0; /* 대댓글 구분을 위한 색상 */
+}
+
+/* 댓글과 대댓글의 상단 영역(top) 스타일 */
+.top {
+    display: flex;
+    justify-content: space-between; /* 작성자와 버튼이 양쪽 끝에 배치 */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* 닉네임 및 작성일 스타일 */
+.top p {
+    width: 92%;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* 작성일 스타일 (span) */
+.top p span {
+    font-size: 12px;
+    color: #999;
+    margin-left: 10px;
+}
+
+/* 댓글 및 대댓글의 내용 스타일 */
+.co1 p, .co2 p {
+    margin: 0;
+    white-space: pre-wrap; /* 줄바꿈을 지원 */
+    font-size: 14px;
+}
+
+/* 삭제 및 답글 버튼 스타일 */
+.commBtn {
+    cursor: pointer;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #0a0a31;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a1a51;
+}

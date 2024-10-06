@@ -1,12 +1,12 @@
 /* 공통 스타일 */
-.boardCreate {
+.boardCreate{
     font-family: "myfont";
     margin: 0 auto;
     max-width: 1280px;
 }
 
 /* 헤더 스타일 (상세 페이지와 동일) */
-.boardCreate > .header {
+.boardCreate>.header{
     width: 1280px;
     height: 100px;
     margin: 0 auto;
@@ -16,7 +16,7 @@
     margin-bottom: 40px;
 }
 
-.boardCreate > .header > .txt1 {
+.boardCreate>.header>.txt1{
     width: 900px;
     font-size: 45px;
     font-weight: bold;
@@ -25,14 +25,14 @@
     color: inherit; 
 }
 
-.boardCreate > .header > .txt2 {
+.boardCreate>.header>.txt2{
     width: 200px;
     font-size: 30px;
     font-weight: bold;
     text-align: end;
 }
 
-.boardCreate > .header  .btn1 {
+.boardCreate>.header .btn1{
     cursor: pointer;
     width: 150px;
     font-size: 20px;
@@ -44,19 +44,19 @@
     transition: background-color 0.3s;
 }
 
-.boardCreate > .header > .btn1:hover {
+.boardCreate>.header>.btn1:hover{
     background-color: #1a1a51;
 }
 
 /* 본문 스타일 */
-.boardCreate > .main {
+.boardCreate>.main{
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 /* 제목 입력란 */
-.boardCreate > .main > input {
+.boardCreate>.main>input{
     width: 100%;
     height: 50px;
     font-size: 20px;
@@ -69,7 +69,7 @@
 }
 
 /* 내용 입력란 */
-.boardCreate > .main > textarea {
+.boardCreate>.main>textarea{
     width: 100%;
     height: 300px;
     font-size: 16px;
@@ -84,7 +84,7 @@
 }
 
 /* 저장 버튼 */
-.boardCreate > .main > button {
+.boardCreate>.main>button{
     cursor: pointer;
     width: 150px;
     height: 50px;
@@ -97,6 +97,6 @@
     padding: 10px;
 }
 
-.boardCreate > .main > button:hover {
+.boardCreate>.main>button:hover{
     background-color: #1a1a51;
 }
